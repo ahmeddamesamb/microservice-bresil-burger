@@ -10,7 +10,7 @@ public class Service1Application {
 
     public static void main(String[] args) {
         SpringApplication.run(Service1Application.class, args);
-        System.out.print("***************** SERVICE CONFIGURATION ******************");
+        System.out.print("***************** SERVICE 1 ******************");
 
     }
 
