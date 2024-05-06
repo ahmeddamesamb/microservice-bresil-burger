@@ -12,4 +12,5 @@ public class UserDto {
     private String email;
     private String password;
     private Boolean isEnable=true;
+
 }
