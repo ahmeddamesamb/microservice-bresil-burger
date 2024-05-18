@@ -18,15 +18,5 @@ public class GatewayServiceApplication {
         SpringApplication.run(GatewayServiceApplication.class, args);
         System.out.print("****************** GatewayService ******************");
     }
-    @Bean
-    DiscoveryClientRouteDefinitionLocator dynamicRoutes(ReactiveDiscoveryClient rdc, DiscoveryLocatorProperties dlp){
-        return new DiscoveryClientRouteDefinitionLocator(rdc, dlp);
-    }
-        public RouteLocator routes(RouteLocatorBuilder builder) {
-        return builder.routes()
-                .route(r -> r.path("/service-1/**").uri("lb://SERVICE-1"))
-                .route(r -> r.path("/products/**").uri("lb://INVENTORY-SERVICE"))
-                .build();
-    }
 
 }

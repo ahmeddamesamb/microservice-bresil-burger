@@ -7,8 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="service-1" />
         <module name="config-server" />
+        <module name="service-commande-livraison" />
+        <module name="service-produit" />
+        <module name="service-1" />
+        <module name="service-user" />
         <module name="gateway-service" />
       </profile>
     </annotationProcessing>
@@ -18,6 +21,9 @@
       <module name="config-server" options="-parameters" />
       <module name="gateway-service" options="-parameters" />
       <module name="service-1" options="-parameters" />
+      <module name="service-commande-livraison" options="-parameters" />
+      <module name="service-produit" options="-parameters" />
+      <module name="service-user" options="-parameters" />
     </option>
   </component>
 </project>
