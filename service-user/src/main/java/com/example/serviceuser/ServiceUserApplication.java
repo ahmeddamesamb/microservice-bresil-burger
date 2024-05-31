@@ -16,7 +16,7 @@ public class ServiceUserApplication {
     }
     public static void main(String[] args) {
         SpringApplication.run(ServiceUserApplication.class, args);
-        System.out.print("***************** SERVICE-USER ******************");
+        System.out.print("***************** SERVICE_USER ******************");
 
     }
 

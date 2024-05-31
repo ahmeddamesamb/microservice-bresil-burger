@@ -11,10 +11,12 @@
         <module name="service-commande-livraison" />
         <module name="service-produit" />
         <module name="service-1" />
-        <module name="service-user" />
         <module name="gateway-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="service-user" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

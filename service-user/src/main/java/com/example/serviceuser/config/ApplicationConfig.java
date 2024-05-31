@@ -1,5 +1,6 @@
 package com.example.serviceuser.config;
 
+import org.keycloak.adapters.springsecurity.authentication.KeycloakLogoutHandler;
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
@@ -22,4 +23,5 @@ public class ApplicationConfig {
     public RestTemplate restTemplate(RestTemplateBuilder builder) {
         return builder.build();
     }
+
 }
